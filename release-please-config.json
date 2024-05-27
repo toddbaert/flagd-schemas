@@ -14,7 +14,21 @@
       "release-type": "simple",
       "prerelease": false,
       "bump-minor-pre-major": true,
-      "bump-patch-for-minor-pre-major": true
+      "bump-patch-for-minor-pre-major": true,
+      "extra-files": [
+        "flags.yaml",
+        "targeting.yaml",
+        {
+          "type": "json",
+          "path": "flags.json",
+          "jsonpath": "$.\\$id"
+        },
+        {
+          "type": "json",
+          "path": "targeting.json",
+          "jsonpath": "$.\\$id"
+        }
+      ]
     }
   },
   "changelog-sections": [
